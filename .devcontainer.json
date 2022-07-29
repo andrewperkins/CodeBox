@@ -1,0 +1,52 @@
+{
+    "name": "CodeBox",
+    "image": "ubuntu:latest",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "vivaxy.vscode-conventional-commits",
+                "prisma.prisma",
+                "bradlc.vscode-tailwindcss",
+                "rangav.vscode-thunder-client",
+                "christian-kohler.npm-intellisense",
+                "ms-python.python",
+                "ms-azuretools.vscode-docker",
+                "ms-toolsai.jupyter",
+                "rust-lang.rust-analyzer"
+            ],
+            "settings": {
+                "conventionalCommits.scopes": [
+                    "EntireApp"
+                ]
+            }
+        }
+    },
+    "features": {
+        "common": {
+            "username": "automatic"
+        },
+        // "docker-in-docker": {
+        //     "version": "latest",
+        //     "moby": true,
+        //     "dockerDashComposeVersion": "v1"
+        // },
+        // "github-cli": "latest",
+        // "jupyterlab": {
+        //     "version": "latest"
+        // },
+        "node": {
+            "version": "lts",
+            "nodeGypDependencies": true
+        },
+        "python": "latest",
+        // "rust": {
+        //     "version": "latest",
+        //     "profile": "minimal"
+        // }
+    },
+    "containerUser": "automatic",
+    "forwardPorts": [
+        3000
+    ]
+}
