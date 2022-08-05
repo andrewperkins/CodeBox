@@ -22,30 +22,30 @@
             }
         }
     },
-    // "features": {
-    //     "common": {
-    //         "username": "${localEnv:USER}",
-    //         "upgradePackages": true
-    //     }
-    //     // "docker-in-docker": {
-    //     //     "version": "latest",
-    //     //     "moby": true,
-    //     //     "dockerDashComposeVersion": "v1"
-    //     // },
-    //     // "github-cli": "latest",
-    //     // "jupyterlab": {
-    //     //     "version": "latest"
-    //     // },
-    //     // "node": {
-    //     //     "version": "lts",
-    //     //     "nodeGypDependencies": true
-    //     // },
-    //     // "python": "latest",
-    //     // "rust": {
-    //     //     "version": "latest",
-    //     //     "profile": "minimal"
-    //     // }
-    // },
+    "features": {
+        "common": {
+            "username": "${localEnv:USER}",
+            "upgradePackages": true
+        }
+        "docker-in-docker": {
+            "version": "latest",
+            "moby": true,
+            "dockerDashComposeVersion": "v1"
+        },
+        "github-cli": "latest",
+        "jupyterlab": {
+            "version": "latest"
+        },
+        "node": {
+            "version": "lts",
+            "nodeGypDependencies": true
+        },
+        "python": "latest",
+        "rust": {
+            "version": "latest",
+            "profile": "minimal"
+        }
+    },
     "containerUser": "${localEnv:USER}",
     "forwardPorts": [
         3000
